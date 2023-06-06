@@ -44,14 +44,8 @@ react-countup                        5.2.0          →         6.1.1
 react-router-dom                     5.2.0          →         6.2.1
 react-scripts                        4.0.3          →         5.0.0
 stylis                               4.0.10         →         4.0.13
-stylis-plugin-rtl                    2.1.0          →         2.1.14
 web-vitals                           1.0.1          →         2.1.4
 ```
-
-### Warning
-
-There is a warnings related to the stylis-plugin-rtl dependency that won't affect on the behavior of the product its something with the library itself.
-
 ## [3.0.0] 2021-11-23
 
 ### Bug fixing
@@ -78,7 +72,6 @@ There is a warnings related to the stylis-plugin-rtl dependency that won't affec
 
 ```
 - jss
-- jss-rtl
 - @mui/styles
 ```
 
@@ -128,14 +121,11 @@ There is a warnings related to the stylis-plugin-rtl dependency that won't affec
 - @mui/styled-engine
 - @mui/styles
 - stylis
-- stylis-plugin-rtl
 ```
 
 ### Updated dependencies
 
 ### Warning
-
-- The soft-ui-dashboard-react/pages/rtl is chaning the route slowly in development mode its a problem with @emotion/cache `prepend` and we will fix it on our future updates.
 - There is some console error related to the key on table component and it will not make any issue for you we will take care of that on our next update for the product.
 
 ## [1.0.0] 2021-09-08

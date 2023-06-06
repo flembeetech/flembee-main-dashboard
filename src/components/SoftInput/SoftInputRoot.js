@@ -1,19 +1,3 @@
-/**
-=========================================================
-* Soft UI Dashboard React - v4.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
 import InputBase from "@mui/material/InputBase";
 import { styled } from "@mui/material/styles";
 
@@ -49,11 +33,7 @@ export default styled(InputBase)(({ theme, ownerState }) => {
 
   let focusedPaddingLeftValue;
 
-  if (direction === "rtl" && iconDirection === "left") {
-    focusedPaddingLeftValue = pxToRem(12);
-  } else if (direction === "rtl" && iconDirection === "right") {
-    focusedPaddingLeftValue = pxToRem(12);
-  } else if (direction === "ltr" && iconDirection === "right") {
+  if (direction === "ltr" && iconDirection === "right") {
     focusedPaddingLeftValue = pxToRem(12);
   } else if (direction === "ltr" && iconDirection === "left") {
     focusedPaddingLeftValue = pxToRem(12);
@@ -61,11 +41,7 @@ export default styled(InputBase)(({ theme, ownerState }) => {
 
   let focusedPaddingRightValue;
 
-  if (direction === "rtl" && iconDirection === "left") {
-    focusedPaddingRightValue = pxToRem(12);
-  } else if (direction === "rtl" && iconDirection === "right") {
-    focusedPaddingRightValue = pxToRem(12);
-  } else if (direction === "ltr" && iconDirection === "right") {
+  if (direction === "ltr" && iconDirection === "right") {
     focusedPaddingRightValue = pxToRem(12);
   } else if (direction === "ltr" && iconDirection === "left") {
     focusedPaddingRightValue = pxToRem(12);
@@ -103,20 +79,12 @@ export default styled(InputBase)(({ theme, ownerState }) => {
   const withIconStyles = () => {
     let withIconBorderRadiusValue = `0 ${borderRadius.md} ${borderRadius.md} 0`;
 
-    if (direction === "rtl" && iconDirection === "left") {
-      withIconBorderRadiusValue = `0 ${borderRadius.md} ${borderRadius.md} 0`;
-    } else if (direction === "rtl" && iconDirection === "right") {
-      withIconBorderRadiusValue = `${borderRadius.md} 0 0 ${borderRadius.md}`;
-    } else if (direction === "ltr" && iconDirection === "right") {
+    if (direction === "ltr" && iconDirection === "right") {
       withIconBorderRadiusValue = `${borderRadius.md} 0 0 ${borderRadius.md}`;
     }
 
     let withIconPaddingLeftValue;
-    if (direction === "rtl" && iconDirection === "left") {
-      withIconPaddingLeftValue = 0;
-    } else if (direction === "rtl" && iconDirection === "right") {
-      withIconPaddingLeftValue = pxToRem(12);
-    } else if (direction === "ltr" && iconDirection === "right") {
+    if (direction === "ltr" && iconDirection === "right") {
       withIconPaddingLeftValue = pxToRem(12);
     } else if (direction === "ltr" && iconDirection === "left") {
       withIconPaddingLeftValue = 0;
@@ -124,11 +92,7 @@ export default styled(InputBase)(({ theme, ownerState }) => {
 
     let withIconPaddingRightValue;
 
-    if (direction === "rtl" && iconDirection === "left") {
-      withIconPaddingRightValue = pxToRem(12);
-    } else if (direction === "rtl" && iconDirection === "right") {
-      withIconPaddingRightValue = 0;
-    } else if (direction === "ltr" && iconDirection === "right") {
+    if (direction === "ltr" && iconDirection === "right") {
       withIconPaddingRightValue = 0;
     } else if (direction === "ltr" && iconDirection === "left") {
       withIconPaddingRightValue = pxToRem(12);
